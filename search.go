@@ -14,7 +14,7 @@ type Result struct {
 	Title string `json:"title"`
 }
 
-const BaseUrl = `https://www.google.com/search?q=site%3Alinkedin.com+${email}&hl=en&gl=us`
+const BaseUrl = `https://www.google.`
 
 var GoogleDomains = map[string]string{
 	"us":  "com/search?q=site%3Alinkedin.com+",
@@ -345,7 +345,7 @@ func url(searchTerm string, countryCode string, languageCode string, limit int, 
 	}
 
 	if limit != 0 {
-		url = fmt.Sprintf("%s%num=%d", url, limit)
+		url = fmt.Sprintf("%s&num=%d",url,limit)
 	}
 	return url
 }
