@@ -1,4 +1,4 @@
-module googlesearch
+module github.com/Zumpit/googlesearch
 
 go 1.17
 
